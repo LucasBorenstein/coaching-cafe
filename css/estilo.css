@@ -1,6 +1,49 @@
 img{
 
-    width: 1000px;
+    width: 1366px;
+   overflow: hidden;
     
 }
 
+
+.d-flex{
+    justify-content: left;
+
+}
+
+/* imagen del logo*/
+.logo-navbar {
+    width: 50px; 
+  }
+  .navbar-custom {
+    background-color: #10605e; 
+  }
+  
+  /* imagen de banner */
+  .image-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-container img.lpm {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Letras*/
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; 
+  }
+
+  h1, h2, h3,p,body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; 
+    font-style: italic; 
+  }
+
+  .bold-text {
+    font-weight: 700; 
+  }
