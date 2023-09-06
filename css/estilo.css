@@ -1,49 +1,109 @@
-img{
+@keyframes slideRight {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+body{
+  background-color: #86eae9;
+}
 
-    width: 1366px;
-   overflow: hidden;
-    
+img {
+
+
+  width: 1366px;
+  overflow: hidden;
+
 }
 
 
-.d-flex{
-    justify-content: left;
+.d-flex {
+  justify-content: left;
 
 }
 
 /* imagen del logo*/
 .logo-navbar {
-    width: 50px; 
-  }
-  .navbar-custom {
-    background-color: #10605e; 
-  }
-  
-  /* imagen de banner */
-  .image-container {
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
+  width: 50px;
 }
 
-.image-container img.lpm {
-    width: 100%;
-    height: auto;
+.navbar-custom {
+  background-color: #10605e;
+}
+
+/* imagen de banner */
+.image-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.image-container .lpm {
+  max-width: 100%;
+  /* Ajusta el ancho máximo según tus necesidades */
+  height: auto;
+  /* Mantener la proporción de aspecto */
+  transform: translateX(-100%);
+  /* Inicialmente, mueve la imagen fuera del contenedor hacia la izquierda */
+  animation: slideRight 0.5s linear forwards;
+  /* Animación de desplazamiento que se detiene después de ejecutarse */
+}
+header{
+  text-align: center;
+  font-size: larger;
 }
 
 
 /*Letras*/
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400; 
-  }
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
 
-  h1, h2, h3,p,body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700; 
-    font-style: italic; 
-  }
+h1,
+h2,
+h3,
+p,
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
 
-  .bold-text {
-    font-weight: 700; 
+.bold-text {
+  font-weight: 700;
+}
+
+/*Carrousel*/
+.carousel-item img {
+  max-width: 500px;
+  max-height: 5%;
+  margin: 0 auto;
+
+}
+
+.carousel-caption h5 {
+  color: black;
+}
+
+.carousel-caption p {
+  color: red;
+}
+
+/*Form*/
+.Formul {
+  margin-right: center;
+  /* Esto alineará el formulario a la derecha */
+  margin-left: 70%;
+  /* Esto creará un espacio grande a la izquierda (puedes ajustar el valor según tus preferencias) */
+  padding: 20px;
+  /* Esto añadirá espacio interno alrededor del formulario si lo deseas */
+
+  .mb-4 {
+    margin-bottom: 50px;
+    /* Aumenta el espacio inferior de la celda */
   }
+}
